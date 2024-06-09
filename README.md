@@ -90,7 +90,7 @@ Execute the above commands in order and enter `pnpm gen-types` to create a `data
 
 ### 3. Run
 
-Presets for each environment are [Expo](https://docs.expo.dev/), [Next.js](https://nextjs.org/docs), and [Tauri](https://tauri.app /ko/v1/guides/) Please refer to the official document.
+Presets for each environment are [Expo](https://docs.expo.dev/), [Next.js](https://nextjs.org/docs), and [Tauri](https://tauri.app/v1/guides/) Please refer to the official document.
 
 - app
     
