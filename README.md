@@ -1,8 +1,7 @@
 # Turborepo-kit
 
-Tuborepo-kit은 Turborepo를 기반으로 한 Production용 모노레포 보일러플레이트입니다.
-
-Web(Next.js), App(React Native Expo), Program(Tauri) 3가지 환경에서 공용으로 사용할 수 있는 Supabase, Tailwindcss, TanStack Query, React-hook-form 기반의 패키지가 준비되어 있습니다.
+Tuborepo-kit is a monorepo boilerplate.
+These are packages based on Supabase, Tailwindcss, TanStack Query, and React-hook-form that can be commonly used in three environments: Web (Next.js), App (React Native Expo), and Desktop (Tauri).
 
 ## File Tree
 
@@ -65,7 +64,7 @@ pnpm i
 cp .env.example .env.local
 ```
 
-각 프로젝트에서 Supabase 환경변수를 설정해줍니다.
+Set the Supabase environment variables in each project.
 
 ### 2. Supabase
 
@@ -79,7 +78,7 @@ create table
   );
 ```
 
-[Supabase](https://supabase.com/)에서 프로젝트를 생성하고 profile 테이블과 profile 스토리지를 생성해줍니다. (RLS 설정 생략)
+Create a project at [Supabase](https://supabase.com/) and create a profile table and profile storage. (RLS settings omitted)
 
 ```bash
 supabase init
@@ -87,11 +86,11 @@ supabase login
 supabase link
 ```
 
-위 명령어를 순서대로 실행하고 `pnpm gen-types` 를 입력하면 `database.types.ts` 파일이 생성됩니다.
+Execute the above commands in order and enter `pnpm gen-types` to create a `database.types.ts` file.
 
 ### 3. Run
 
-각 환경별 사전 설정은 [Expo](https://docs.expo.dev/), [Next.js](https://nextjs.org/docs), [Tauri](https://tauri.app/ko/v1/guides/) 공식문서를 참고해주시길 바랍니다.
+Presets for each environment are [Expo](https://docs.expo.dev/), [Next.js](https://nextjs.org/docs), and [Tauri](https://tauri.app /ko/v1/guides/) Please refer to the official document.
 
 - app
     
